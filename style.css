@@ -517,3 +517,31 @@ nav a.active {
     background-color: #ffcc00;
     color: #004080;
 }
+
+/* Stack nav links on small screens */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* stack logo/title and nav */
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column; /* nav links stacked vertically */
+        gap: 10px; /* spacing between links */
+        margin-top: 15px;
+    }
+
+    .header-left {
+        flex-direction: column; /* stack logo above title */
+        gap: 5px;
+    }
+
+    .church-name h1 {
+        font-size: 1.5em;
+    }
+
+    .church-logo {
+        width: 70px; /* smaller logo on mobile */
+    }
+}
