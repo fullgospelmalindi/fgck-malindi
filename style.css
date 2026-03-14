@@ -460,21 +460,14 @@ color:#1a237e;
 margin-bottom:10px;
 }
 
-
 .ministry-card:hover{
 transform:translateY(-5px);
 transition:0.3s;
 box-shadow:0 8px 15px rgba(0,0,0,0.2);
 }
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
 .church-logo {
-    width: 80px;
+    width: 100px; /* Adjust size */
     height: auto;
+    display: block;
+    margin: 0 auto 10px auto; /* Centered above the text */
 }
