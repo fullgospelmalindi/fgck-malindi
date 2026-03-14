@@ -544,4 +544,42 @@ nav a.active {
     .church-logo {
         width: 70px; /* smaller logo on mobile */
     }
+/* =========================
+   Mobile-friendly header & nav
+========================= */
+@media screen and (max-width: 768px) {
+    /* Stack header content vertically on small screens */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Stack logo above the church name */
+    .header-left {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    /* Reduce logo size on mobile */
+    .church-logo {
+        width: 70px;
+        height: auto;
+    }
+
+    /* Stack navigation links vertically and center them */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%; /* make links fill the width */
+        padding: 10px 0;
+        border-radius: 0; /* optional: remove rounded corners on mobile */
+    }
 }
