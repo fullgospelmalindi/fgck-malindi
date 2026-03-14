@@ -465,9 +465,55 @@ transform:translateY(-5px);
 transition:0.3s;
 box-shadow:0 8px 15px rgba(0,0,0,0.2);
 }
+header {
+    display: flex;
+    justify-content: space-between; /* logo left, nav right */
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #004080;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center; /* vertically center logo and text */
+    gap: 15px; /* space between logo and text */
+}
+
 .church-logo {
-    width: 100px; /* Adjust size */
+    width: 80px; /* adjust size as needed */
     height: auto;
-    display: block;
-    margin: 0 auto 10px auto; /* Centered above the text */
+}
+
+.church-name h1 {
+    font-size: 1.8em;
+    margin-bottom: 2px;
+}
+
+.church-name p {
+    font-size: 1em;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #0066cc;
+}
+
+nav a.active {
+    background-color: #ffcc00;
+    color: #004080;
 }
