@@ -1,0 +1,404 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#1a237e;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.location{
+font-size:18px;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+.hero{
+background-image: url("church.jpeg"); /* your church photo */
+background-size: cover;
+background-position: center;
+color:white;
+text-align:center;
+padding:120px 20px;
+position: relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background: rgba(0,0,0,0.5); /* dark overlay */
+z-index:0;
+}
+
+.hero h2,
+.hero p,
+.hero .btn{
+position: relative;
+z-index:1;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:#d4af37;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition: 0.3s;
+}
+
+.btn:hover{
+background:#b8860b;
+transform: scale(1.05);
+}
+
+.theme{
+background:#fff8e1;
+text-align:center;
+padding:60px 20px;
+}
+
+.theme-title{
+color:#d4af37;
+font-size:40px;
+}
+
+.verse{
+font-style:italic;
+font-size:18px;
+margin-top:20px;
+}
+
+.reference{
+font-weight:bold;
+margin-top:10px;
+}
+
+.services{
+background:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.service-box{
+display:inline-block;
+background:#e3f2fd;
+padding:20px;
+margin:15px;
+width:220px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about{
+padding:60px 20px;
+text-align:center;
+background:#f4f4f4;
+}
+
+.ministries{
+background:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.ministry-box{
+display:inline-block;
+background:#f1f8e9;
+padding:20px;
+margin:15px;
+width:220px;
+border-radius:8px;
+}
+.about-page{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+background:white;
+line-height:1.7;
+}
+
+.about-page h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.about-page h3{
+margin-top:25px;
+color:#1a237e;
+}
+
+.about-page ul{
+margin-left:20px;
+}
+.contact{
+background:#e8eaf6;
+padding:60px 20px;
+text-align:center;
+}
+
+.contact h2{
+font-size:32px;
+color:#1a237e;
+margin-bottom:20px;
+}
+
+.contact-info{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.contact-box{
+background:white;
+padding:25px;
+width:250px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-box h3{
+color:#1a237e;
+margin-bottom:10px;
+}
+/* Ministries Page */
+
+.ministries{
+padding:60px 20px;
+text-align:center;
+background:#f4f4f4;
+}
+
+.ministries h2{
+font-size:32px;
+color:#1a237e;
+margin-bottom:10px;
+}
+
+.intro{
+max-width:700px;
+margin:auto;
+margin-bottom:40px;
+font-size:18px;
+}
+
+.ministries-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.ministry-box{
+background:white;
+width:300px;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:left;
+}
+
+.ministry-box h3{
+color:#1a237e;
+margin-bottom:10px;
+}
+
+.ministry-box p{
+font-size:16px;
+line-height:1.5;
+}
+/* Navigation links */
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+    padding:5px 10px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Active page link */
+nav a.active{
+    background:#d4af37; /* gold background */
+    color:#1a237e;      /* dark text */
+    border-radius:5px;
+}
+/* Footer */
+footer{
+background:#1a237e;
+color:white;
+padding:40px 20px;
+text-align:center;
+}
+
+footer .footer-content h3{
+margin-bottom:10px;
+font-size:24px;
+}
+
+footer .footer-content p{
+margin:5px 0;
+font-size:16px;
+}
+
+footer .contact-info p{
+margin:5px 0;
+}
+
+footer .contact-info i{
+margin-right:8px;
+color:#d4af37; /* gold icon color */
+}
+
+footer .social-media{
+margin:15px 0;
+}
+
+footer .social-media a{
+color:white;
+font-size:20px;
+margin:0 10px;
+transition:0.3s;
+}
+
+footer .social-media a:hover{
+color:#d4af37; /* gold hover effect */
+}
+
+footer .footer-bottom{
+margin-top:15px;
+font-size:14px;
+color:#ccc;
+}
+/* Map */
+.map-container{
+  margin-top:30px;
+  width:100%;
+  max-width:900px;
+  height:450px;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.map-container iframe{
+  width:100%;
+  height:100%;
+  border:0;
+}
+.join-btn{
+  display:inline-block;
+  background:#d4af37;   /* gold color */
+  color:#1a237e;         /* dark text */
+  padding:12px 25px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:20px;
+  transition:0.3s;
+}
+
+.join-btn:hover{
+  background:#b9922e;    /* darker gold on hover */
+  color:white;
+}
+/* Leadership Section */
+.leadership{
+  padding:60px 20px;
+  background:#f4f4f4;
+  text-align:center;
+}
+
+.leadership h2{
+  font-size:32px;
+  color:#1a237e;
+  margin-bottom:10px;
+}
+
+.leadership p{
+  max-width:700px;
+  margin:auto;
+  margin-bottom:40px;
+  font-size:18px;
+}
+
+.leadership-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:25px;
+}
+
+.leader-card{
+  background:white;
+  width:250px;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  text-align:center;
+  transition: 0.3s;
+}
+
+.leader-card img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+}
+
+.leader-card h3{
+  color:#1a237e;
+  margin-bottom:5px;
+}
+
+.leader-card p{
+  font-size:16px;
+  color:#555;
+  margin-bottom:10px;
+}
+
+/* Quotes under each leader */
+.leader-card blockquote{
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* Hover effect for cards */
+.leader-card:hover{
+  transform: translateY(-5px);
+  box-shadow:0 8px 15px rgba(0,0,0,0.2);
+}
